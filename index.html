@@ -8,23 +8,51 @@
   </head>
   <body class="isolate">
     <main>
-      <div class="mx-auto">
-        <header class="flex items-center justify-between bg-primary px-4 pt-4">
-          <img class="pointer-events-none" src="./images/Logo.svg" alt="Logo" />
-          <img
-            class="pointer-events-none"
-            src="./images/Menubar.svg"
-            alt="Menu bar"
-          />
-        </header>
-        <div class="bg-primary px-4 pt-[40px]">
-          <!-- The Grid Wrapper -->
+      <section class="bg-primary px-4 pt-4">
+        <div class="mx-auto max-w-screen-xxl">
+          <header class="flex items-center justify-between">
+            <img
+              class="pointer-events-none"
+              src="./images/Logo.svg"
+              alt="Logo"
+            />
+            <ul
+              class="hidden items-center gap-x-11 text-base font-medium text-white md:flex"
+            >
+              <li><a href="">Demos</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <div class="hidden space-x-12 md:inline-block">
+              <a class="text-base font-medium text-white" href="">Log in</a>
+              <a
+                class="inline-block rounded-lg bg-secondary px-8 py-3 text-base font-medium text-white"
+                href=""
+                >Sign Up</a
+              >
+            </div>
+            <img
+              class="pointer-events-none md:hidden"
+              src="./images/Menubar.svg"
+              alt="Menu bar"
+            />
+          </header>
+        </div>
+      </section>
+      <div
+        class="items-center justify-center bg-primary px-4 pt-[40px] md:grid md:grid-cols-2 md:grid-rows-1"
+      >
+        <!-- The Grid Wrapper -->
+        <div>
           <h1
-            class="mb-4 max-w-[635px] font-bold leading-[52px] tracking-tighter text-white [font-size:clamp(36px,_24.872px_+_3.2727vw,_72px);]"
+            class="mb-4 max-w-[39.6875rem] text-4xl font-bold leading-[52px] tracking-tighter text-white lg:text-7xl"
           >
             Thinking the high quality software for your business
           </h1>
-          <p class="mb-7 text-base font-medium text-[rgba(255,_255,_255,_.8)]">
+          <p
+            class="mb-7 max-w-[30.625rem] text-base font-medium text-[rgba(255,_255,_255,_.8)]"
+          >
             An enim nullam tempor sapien gravida donec enim ipsum porta justo
             congue magna at pretium purus pretium ligula
           </p>
@@ -51,36 +79,42 @@
               Watch the intro video</a
             >
           </div>
-          <div class="mb-10">
-            <picture>
-              <source
-                media="(max-width:750px)"
-                srcset="./images/Hero-image.png"
-              />
-              <source
-                media="(min-width:751px)"
-                srcset="./images/Hero-2-image.png"
-              />
-              <img
-                src="./images/Hero-2-image.png"
-                alt="Hero Image"
-                style="width: auto"
-              />
-            </picture>
-          </div>
         </div>
-        <section class="bg-white px-4">
-          <div class="my-14 flex flex-col items-center justify-center gap-y-8">
-            <img src="./images/Airbnb.svg" alt="" />
-            <img src="./images/Hubspot.svg" alt="" />
-            <img src="./images/Google.svg" alt="" />
-            <img src="./images/Microsoft.svg" alt="" />
-            <img src="./images/Walmart.svg" alt="" />
-            <img src="./images/FedEx.svg" alt="" />
-          </div>
-        </section>
-        <section class="bg-[rgba(55,_124,_253,_0.02)] px-4">
-          <div class="pt-14 pb-10">
+        <div class="mb-10">
+          <picture>
+            <source
+              media="(max-width:750px)"
+              srcset="./images/Hero-image.png"
+            />
+            <source
+              media="(min-width:751px)"
+              srcset="./images/Hero-2-image.png"
+            />
+            <img
+              src="./images/Hero-2-image.png"
+              alt="Hero Image"
+              style="width: auto"
+            />
+          </picture>
+        </div>
+      </div>
+      <section class="bg-white px-4">
+        <div
+          class="sponsor my-14 flex flex-col items-center justify-center gap-x-20 gap-y-8"
+        >
+          <img src="./images/Airbnb.svg" alt="" />
+          <img src="./images/Hubspot.svg" alt="" />
+          <img src="./images/Google.svg" alt="" />
+          <img src="./images/Microsoft.svg" alt="" />
+          <img src="./images/Walmart.svg" alt="" />
+          <img src="./images/FedEx.svg" alt="" />
+        </div>
+      </section>
+      <section class="bg-[rgba(55,_124,_253,_0.02)] pr-4 pl-4 md:pl-12 md:pr-4">
+        <div
+          class="max-w mx-auto max-w-6xl pt-14 pb-10 md:grid md:grid-cols-2 md:grid-rows-1 md:items-center md:justify-center md:gap-x-20 lg:gap-x-40"
+        >
+          <div class="md:order-2">
             <h3 class="mb-5 text-xl font-semibold text-primary">
               About appmax
             </h3>
@@ -99,7 +133,7 @@
               >Get Started</a
             >
           </div>
-          <div class="flex flex-col gap-y-6 pb-14">
+          <div class="mt-10 flex flex-col gap-y-6 pb-14">
             <div
               class="flex items-start justify-start gap-x-5 rounded-lg bg-white p-7 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
             >
@@ -135,7 +169,7 @@
               </div>
             </div>
             <div
-              class="flex items-start justify-start gap-x-5 rounded-lg bg-white p-7 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+              class="flex items-start justify-start gap-x-5 rounded-lg bg-white p-7 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)] md:-translate-x-8"
             >
               <span
                 class="inline-flex h-[3.125rem] min-w-[3.125rem] items-center justify-center rounded-full bg-[rgba(253,_76,_92,_.1)]"
@@ -203,16 +237,22 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="bg-white px-4 pb-32">
-          <div class="pt-14">
+        </div>
+      </section>
+      <section class="bg-white px-4 pb-32">
+        <div
+          class="md:grid md:grid-cols-2 md:grid-rows-1 md:items-center md:justify-center"
+        >
+          <div class="translate-y-6 pt-14">
             <h3 class="mb-5 text-xl font-semibold text-primary">
               Why choose us
             </h3>
-            <h2 class="mb-4 text-4xl font-bold tracking-tight">
+            <h2
+              class="mb-4 max-w-[32.8125rem] text-4xl font-bold tracking-tight"
+            >
               Appmax protect your data like never before
             </h2>
-            <p class="mb-7 text-accent opacity-80">
+            <p class="mb-7 max-w-[32.5625rem] text-accent opacity-80">
               An enim nullam tempor sapien gravida donec enim ipsum porta justo
               integer at odio velna vitae auctor integer congue magna at pretium
             </p>
@@ -234,547 +274,541 @@
               alt=""
             />
           </div>
-        </section>
-        <section class="bg-[rgba(55,_124,_253,_.02)] px-4 py-14">
-          <div class="flex flex-col justify-around gap-y-6">
-            <div
-              class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(0,_187,_152,_.1)] px-10 py-5"
-            >
-              <p class="text-6xl font-bold text-accent">28K</p>
-              <span class="text-base font-semibold text-accent"
-                >Total Users</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(120,_27,_255,_.1)] px-10 py-5"
-            >
-              <p class="text-6xl font-bold text-accent">13K</p>
-              <span class="text-base font-semibold text-accent">Downloads</span>
-            </div>
-            <div
-              class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(253,_76,_92,_.1)] px-10 py-5"
-            >
-              <p class="text-6xl font-bold text-accent">68K</p>
-              <span class="text-base font-semibold text-accent"
-                >Social Likes</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(255,_200,_62,_.1)] px-10 py-5"
-            >
-              <p class="text-6xl font-bold text-accent">10K</p>
-              <span class="text-base font-semibold text-accent"
-                >5 Stars Rating</span
-              >
-            </div>
+        </div>
+      </section>
+      <section class="bg-[rgba(55,_124,_253,_.02)] px-4 py-14">
+        <div class="stats flex flex-col justify-around gap-y-6 gap-x-6">
+          <div
+            class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(0,_187,_152,_.1)] px-10 py-5"
+          >
+            <p class="text-6xl font-bold text-accent">28K</p>
+            <span class="text-base font-semibold text-accent">Total Users</span>
           </div>
-        </section>
-        <section class="isolate bg-white px-4">
-          <img
-            class="pointer-events-none absolute left-0 -z-10 h-[120px] w-[120px]"
-            src="./images/shape.svg"
-            alt=""
-          />
-          <div class="mb-10 py-14">
-            <h3 class="mb-5 text-center text-xl font-semibold text-primary">
-              Services
-            </h3>
-            <h2 class="text-center text-4xl font-bold">
-              The most useful services for your business
-            </h2>
-            <p
-              class="mt-4 mb-10 text-center text-base font-normal text-accent opacity-80"
-            >
-              An enim nullam tempor sapien gravida donec enim ipsum porta justo
-              integer at odio velna gna at pretium
-            </p>
-            <div class="grid gap-y-6">
-              <div
-                class="flex flex-col items-center justify-center rounded-lg py-10 px-4 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
-              >
-                <span
-                  class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
-                  ><svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.1818 14.5455H25.4545C25.9368 14.5455 26.3992 14.3539 26.7402 14.0129C27.0812 13.6719 27.2727 13.2095 27.2727 12.7273C27.2727 12.2451 27.0812 11.7826 26.7402 11.4416C26.3992 11.1006 25.9368 10.9091 25.4545 10.9091H21.8182V9.09091C21.8182 8.6087 21.6266 8.14623 21.2857 7.80526C20.9447 7.46428 20.4822 7.27273 20 7.27273C19.5178 7.27273 19.0553 7.46428 18.7144 7.80526C18.3734 8.14623 18.1818 8.6087 18.1818 9.09091V10.9091C16.7352 10.9091 15.3478 11.4838 14.3249 12.5067C13.302 13.5296 12.7273 14.917 12.7273 16.3636C12.7273 17.8103 13.302 19.1977 14.3249 20.2206C15.3478 21.2435 16.7352 21.8182 18.1818 21.8182H21.8182C22.3004 21.8182 22.7629 22.0097 23.1038 22.3507C23.4448 22.6917 23.6364 23.1541 23.6364 23.6364C23.6364 24.1186 23.4448 24.581 23.1038 24.922C22.7629 25.263 22.3004 25.4545 21.8182 25.4545H14.5455C14.0632 25.4545 13.6008 25.6461 13.2598 25.9871C12.9188 26.3281 12.7273 26.7905 12.7273 27.2727C12.7273 27.7549 12.9188 28.2174 13.2598 28.5584C13.6008 28.8993 14.0632 29.0909 14.5455 29.0909H18.1818V30.9091C18.1818 31.3913 18.3734 31.8538 18.7144 32.1947C19.0553 32.5357 19.5178 32.7273 20 32.7273C20.4822 32.7273 20.9447 32.5357 21.2857 32.1947C21.6266 31.8538 21.8182 31.3913 21.8182 30.9091V29.0909C23.2648 29.0909 24.6522 28.5162 25.6751 27.4933C26.6981 26.4704 27.2727 25.083 27.2727 23.6364C27.2727 22.1897 26.6981 20.8023 25.6751 19.7794C24.6522 18.7565 23.2648 18.1818 21.8182 18.1818H18.1818C17.6996 18.1818 17.2372 17.9903 16.8962 17.6493C16.5552 17.3083 16.3636 16.8458 16.3636 16.3636C16.3636 15.8814 16.5552 15.419 16.8962 15.078C17.2372 14.737 17.6996 14.5455 18.1818 14.5455ZM20 0C16.0444 0 12.1776 1.17298 8.8886 3.37061C5.59962 5.56823 3.03617 8.69181 1.52242 12.3463C0.00866576 16.0009 -0.387401 20.0222 0.384303 23.9018C1.15601 27.7814 3.06082 31.3451 5.85787 34.1421C8.65492 36.9392 12.2186 38.844 16.0982 39.6157C19.9778 40.3874 23.9992 39.9913 27.6537 38.4776C31.3082 36.9638 34.4318 34.4004 36.6294 31.1114C38.827 27.8224 40 23.9556 40 20C40 14.6957 37.8929 9.60859 34.1421 5.85786C30.3914 2.10714 25.3043 0 20 0ZM20 36.3636C16.7636 36.3636 13.5998 35.4039 10.9089 33.6059C8.21787 31.8078 6.1205 29.2522 4.88198 26.2621C3.64345 23.272 3.3194 19.9818 3.95079 16.8076C4.58219 13.6334 6.14067 10.7177 8.42917 8.42916C10.7177 6.14066 13.6334 4.58218 16.8076 3.95079C19.9819 3.31939 23.272 3.64345 26.2621 4.88197C29.2522 6.12049 31.8078 8.21786 33.6059 10.9088C35.4039 13.5998 36.3636 16.7636 36.3636 20C36.3636 24.3399 34.6396 28.5021 31.5708 31.5708C28.5021 34.6396 24.3399 36.3636 20 36.3636Z"
-                      fill="#377CFD"
-                    />
-                  </svg>
-                </span>
-                <h3 class="mb-4 text-center text-xl font-bold">
-                  Wealth Nurturing
-                </h3>
-                <p class="text-center text-base text-[#000B33] opacity-70">
-                  With lots of unique blocks you can easily create a page
-                  without coding with Appmax easily.
-                </p>
-              </div>
-              <div
-                class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
-              >
-                <span
-                  class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
-                  ><svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11 28C11.7956 28 12.5587 27.6839 13.1213 27.1213C13.6839 26.5587 14 25.7956 14 25C14.0098 24.9002 14.0098 24.7998 14 24.7L19.58 19.12H20.5L23.72 22.34V22.5C23.72 23.2956 24.0361 24.0587 24.5987 24.6213C25.1613 25.1839 25.9243 25.5 26.72 25.5C27.5156 25.5 28.2787 25.1839 28.8413 24.6213C29.4039 24.0587 29.72 23.2956 29.72 22.5V22.34L37 15C37.5933 15 38.1734 14.8241 38.6667 14.4944C39.1601 14.1648 39.5446 13.6962 39.7716 13.1481C39.9987 12.5999 40.0581 11.9967 39.9424 11.4147C39.8266 10.8328 39.5409 10.2982 39.1213 9.87868C38.7018 9.45912 38.1672 9.1734 37.5853 9.05764C37.0033 8.94189 36.4001 9.0013 35.852 9.22836C35.3038 9.45542 34.8352 9.83994 34.5056 10.3333C34.1759 10.8266 34 11.4067 34 12C33.9902 12.0998 33.9902 12.2002 34 12.3L26.78 19.52H26.46L23 16C23 15.2044 22.6839 14.4413 22.1213 13.8787C21.5587 13.3161 20.7956 13 20 13C19.2044 13 18.4413 13.3161 17.8787 13.8787C17.3161 14.4413 17 15.2044 17 16L11 22C10.2044 22 9.44129 22.3161 8.87868 22.8787C8.31607 23.4413 8 24.2044 8 25C8 25.7956 8.31607 26.5587 8.87868 27.1213C9.44129 27.6839 10.2044 28 11 28V28ZM38 36H4V2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V38C0 38.5304 0.210714 39.0391 0.585786 39.4142C0.960859 39.7893 1.46957 40 2 40H38C38.5304 40 39.0391 39.7893 39.4142 39.4142C39.7893 39.0391 40 38.5304 40 38C40 37.4696 39.7893 36.9609 39.4142 36.5858C39.0391 36.2107 38.5304 36 38 36Z"
-                      fill="#377CFD"
-                    />
-                  </svg>
-                </span>
-                <h3 class="mb-4 text-center text-xl font-bold">
-                  Steady Growth
-                </h3>
-                <p class="text-center text-base text-[#000B33] opacity-70">
-                  With lots of unique blocks you can easily create a page
-                  without coding with Appmax easily.
-                </p>
-              </div>
-              <div
-                class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
-              >
-                <span
-                  class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
-                  ><svg
-                    width="30"
-                    height="40"
-                    viewBox="0 0 30 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M23.7985 3.31124C22.1264 1.93602 20.1684 0.951432 18.0673 0.429308C15.9662 -0.0928165 13.7751 -0.139305 11.6538 0.293235C8.82915 0.863787 6.23769 2.26053 4.20816 4.30624C2.17864 6.35195 0.802523 8.95443 0.254424 11.7835C-0.145831 13.9047 -0.073098 16.088 0.467434 18.1779C1.00797 20.2677 2.00298 22.2126 3.38151 23.8737C4.66087 25.3173 5.39418 27.1635 5.45412 29.0915V34.5458C5.45412 35.9923 6.02876 37.3796 7.05163 38.4025C8.07449 39.4254 9.46179 40 10.9083 40H18.1806C19.6272 40 21.0145 39.4254 22.0374 38.4025C23.0602 37.3796 23.6349 35.9923 23.6349 34.5458V29.437C23.6959 27.3083 24.4779 25.2635 25.8529 23.6373C28.2621 20.6571 29.3977 16.8465 29.0131 13.0336C28.6284 9.22077 26.7544 5.7138 23.7985 3.27488V3.31124ZM19.9987 34.5458C19.9987 35.028 19.8072 35.4904 19.4662 35.8313C19.1253 36.1723 18.6628 36.3638 18.1806 36.3638H10.9083C10.4262 36.3638 9.96373 36.1723 9.62277 35.8313C9.28182 35.4904 9.09027 35.028 9.09027 34.5458V32.7277H19.9987V34.5458ZM23.0349 21.3829C21.2068 23.5511 20.1403 26.2591 19.9987 29.0915H16.3626V23.6373C16.3626 23.1551 16.171 22.6927 15.8301 22.3517C15.4891 22.0108 15.0267 21.8192 14.5445 21.8192C14.0623 21.8192 13.5999 22.0108 13.2589 22.3517C12.918 22.6927 12.7264 23.1551 12.7264 23.6373V29.0915H9.09027C9.0423 26.3064 8.01205 23.6278 6.18135 21.5284C4.9735 20.0812 4.16127 18.3457 3.82387 16.4911C3.48647 14.6365 3.63541 12.7262 4.25617 10.9463C4.87692 9.16643 5.94831 7.5778 7.36587 6.33529C8.78342 5.09279 10.4988 4.23882 12.3446 3.85666C13.931 3.53003 15.5702 3.56076 17.1432 3.9466C18.7162 4.33245 20.1836 5.06373 21.4387 6.08736C22.6939 7.11098 23.7054 8.40127 24.3997 9.86453C25.094 11.3278 25.4538 12.9273 25.4529 14.5469C25.4664 17.0375 24.6113 19.4548 23.0349 21.3829Z"
-                      fill="#377CFD"
-                    />
-                  </svg>
-                </span>
-                <h3 class="mb-4 text-center text-xl font-bold">
-                  Boost SEO Ranking
-                </h3>
-                <p class="text-center text-base text-[#000B33] opacity-70">
-                  With lots of unique blocks you can easily create a page
-                  without coding with Appmax easily.
-                </p>
-              </div>
-              <div
-                class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
-              >
-                <span
-                  class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
-                  ><svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M30.1195 40H6.02391C4.42627 40 2.89406 39.3653 1.76436 38.2356C0.63466 37.1059 0 35.5737 0 33.9761V13.8964C0 12.2988 0.63466 10.7665 1.76436 9.63685C2.89406 8.50714 4.42627 7.87249 6.02391 7.87249H8.03188C8.06565 6.17101 8.63899 4.52423 9.6692 3.16968C10.6994 1.81512 12.1333 0.822801 13.7639 0.335839C15.3946 -0.151123 17.1377 -0.107555 18.742 0.460258C20.3463 1.02807 21.7288 2.09078 22.6901 3.49511C23.5905 4.7785 24.0806 6.30479 24.0956 7.87249H30.1195C30.6521 7.87249 31.1628 8.08404 31.5394 8.46061C31.916 8.83717 32.1275 9.34791 32.1275 9.88045V15.9044C33.829 15.9381 35.4758 16.5115 36.8303 17.5417C38.1849 18.5719 39.1772 20.0057 39.6642 21.6364C40.1511 23.267 40.1076 25.0102 39.5397 26.6145C38.9719 28.2188 37.9092 29.6013 36.5049 30.5625C35.2215 31.463 33.6952 31.9531 32.1275 31.9681V37.992C32.1275 38.5246 31.916 39.0353 31.5394 39.4119C31.1628 39.7884 30.6521 40 30.1195 40ZM6.02391 11.8884C5.49136 11.8884 4.98063 12.1 4.60406 12.4765C4.22749 12.8531 4.01594 13.3638 4.01594 13.8964V33.9761C4.01594 34.5086 4.22749 35.0194 4.60406 35.3959C4.98063 35.7725 5.49136 35.9841 6.02391 35.9841H28.1116V29.5987C28.1098 29.2768 28.1856 28.9591 28.3323 28.6725C28.4791 28.386 28.6926 28.1389 28.9549 27.9522C29.2164 27.7657 29.5188 27.6447 29.8368 27.5993C30.1547 27.5538 30.4789 27.5854 30.7822 27.6911C31.3544 27.9246 31.9777 28.0048 32.5904 27.9238C33.2031 27.8428 33.7841 27.6034 34.276 27.2293C34.7657 26.9307 35.1857 26.5307 35.5078 26.0562C35.8299 25.5817 36.0467 25.0437 36.1435 24.4784C36.2209 23.9082 36.1749 23.3281 36.0086 22.7773C35.8423 22.2264 35.5596 21.7178 35.1796 21.2857C34.6657 20.6615 33.9659 20.2177 33.1821 20.019C32.3983 19.8204 31.5715 19.8772 30.8223 20.1813C30.5191 20.2871 30.1949 20.3186 29.8769 20.2732C29.559 20.2278 29.2566 20.1068 28.9951 19.9203C28.7328 19.7336 28.5193 19.4865 28.3725 19.1999C28.2257 18.9134 28.15 18.5957 28.1517 18.2738V11.8884H21.7262C21.3962 11.9071 21.0667 11.8441 20.7669 11.7049C20.4671 11.5656 20.2063 11.3546 20.0077 11.0904C19.8091 10.8262 19.6787 10.517 19.6282 10.1904C19.5777 9.86373 19.6087 9.52966 19.7183 9.21782C19.9517 8.64557 20.0319 8.02233 19.9509 7.40962C19.8699 6.7969 19.6305 6.2159 19.2564 5.72396C18.96 5.22029 18.554 4.78979 18.0685 4.46434C17.5831 4.1389 17.0306 3.92687 16.4521 3.84394C15.8735 3.76102 15.2838 3.80934 14.7264 3.98531C14.1691 4.16129 13.6585 4.46042 13.2325 4.86053C12.8369 5.25292 12.5273 5.72334 12.3233 6.24188C12.1193 6.76042 12.0255 7.31572 12.0478 7.87249C12.0525 8.33306 12.1409 8.78893 12.3089 9.21782C12.415 9.52147 12.4467 9.84617 12.4012 10.1646C12.3556 10.483 12.2343 10.7859 12.0473 11.0476C11.8604 11.3093 11.6133 11.5223 11.3268 11.6687C11.0404 11.815 10.7229 11.8904 10.4013 11.8884H6.02391Z"
-                      fill="#377CFD"
-                    />
-                  </svg>
-                </span>
-                <h3 class="mb-4 text-center text-xl font-bold">
-                  App Integrations
-                </h3>
-                <p class="text-center text-base text-[#000B33] opacity-70">
-                  With lots of unique blocks you can easily create a page
-                  without coding with Appmax easily.
-                </p>
-              </div>
-              <div
-                class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
-              >
-                <span
-                  class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
-                  ><svg
-                    width="44"
-                    height="40"
-                    viewBox="0 0 44 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M33.7577 13.5664L24.8845 20.7091C24.0699 21.3488 23.0643 21.6965 22.0286 21.6965C20.993 21.6965 19.9873 21.3488 19.1728 20.7091L10.2246 13.5664"
-                      stroke="#377CFD"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12.167 2H31.7773C34.6061 2.0312 37.2955 3.2272 39.2237 5.3072C40.1788 6.3393 40.9155 7.55379 41.3894 8.87774C41.8634 10.2017 42.0649 11.6078 41.9818 13.0115V26.5898C42.0649 27.9935 41.8634 29.3996 41.3894 30.7236C40.9155 32.0475 40.1788 33.262 39.2237 34.2941C38.2723 35.3223 37.1213 36.1458 35.841 36.7144C34.5608 37.2831 33.178 37.5848 31.7773 37.6013H12.167C6.09344 37.6013 2 32.6613 2 26.5898V13.0115C2 6.94 6.09344 2 12.167 2Z"
-                      stroke="#377CFD"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <h3 class="mb-4 text-center text-xl font-bold">
-                  Best Email Templates
-                </h3>
-                <p class="text-center text-base text-[#000B33] opacity-70">
-                  With lots of unique blocks you can easily create a page
-                  without coding with Appmax easily.
-                </p>
-              </div>
-              <div
-                class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
-              >
-                <span
-                  class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
-                  ><svg
-                    width="38"
-                    height="44"
-                    viewBox="0 0 38 44"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.1117 39.7046C15.1258 40.9601 16.5911 41.7688 18.1939 41.9576C19.7968 42.1464 21.4098 41.7002 22.6878 40.7146C23.0798 40.4226 23.4319 40.0826 23.7359 39.7046M2.0015 25.5744V25.1364C2.06719 23.8379 2.48325 22.5814 3.20552 21.5003C4.40685 20.203 5.23237 18.6031 5.59356 16.8722C5.59356 15.5402 5.59356 14.1882 5.70956 12.8542C6.30957 6.43607 12.6557 2 18.9218 2H19.0778C25.3439 2 31.69 6.43607 32.312 12.8542C32.428 14.1882 32.312 15.5402 32.408 16.8722C32.7736 18.6064 33.5976 20.2108 34.794 21.5183C35.5241 22.5943 35.9401 23.8464 35.9981 25.1384V25.5564C36.0421 27.2964 35.4421 28.9944 34.31 30.3365C32.802 31.9099 30.7748 32.8833 28.6039 33.0765C22.2138 33.7625 15.7657 33.7625 9.37562 33.0765C7.20718 32.8747 5.18281 31.9026 3.66953 30.3365C2.5584 29.0024 1.9661 27.3122 2.0015 25.5764V25.5744Z"
-                      stroke="#377CFD"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <h3 class="mb-4 text-center text-xl font-bold">
-                  Automated Reminders
-                </h3>
-                <p class="text-center text-base text-[#000B33] opacity-70">
-                  With lots of unique blocks you can easily create a page
-                  without coding with Appmax easily.
-                </p>
-              </div>
-            </div>
+          <div
+            class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(120,_27,_255,_.1)] px-10 py-5"
+          >
+            <p class="text-6xl font-bold text-accent">13K</p>
+            <span class="text-base font-semibold text-accent">Downloads</span>
           </div>
-        </section>
-        <section class="bg-[rgba(55,_124,_253,_.02)] px-4 py-14">
-          <img class="mb-10" src="./images/Image.png" alt="" />
-          <div>
-            <h3 class="mb-5 text-xl font-semibold text-primary">
-              Awesome software
-            </h3>
-            <h2 class="mb-4 text-4xl font-bold">
-              Get tips and tricks on how to skyrocket your sales with Appmax
-            </h2>
-            <p class="mb-7 text-base text-accent opacity-80">
-              An enim nullam tempor sapien gravida donec enim ipsum porta justo
-              integer at odio velna vitae auctor integer congue magna at pretium
-            </p>
-            <a
-              class="inline-block justify-start rounded-lg bg-secondary px-8 py-3 text-lg font-medium text-white"
-              href=""
-              >Get Started</a
+          <div
+            class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(253,_76,_92,_.1)] px-10 py-5"
+          >
+            <p class="text-6xl font-bold text-accent">68K</p>
+            <span class="text-base font-semibold text-accent"
+              >Social Likes</span
             >
           </div>
-        </section>
-        <section class="isolate bg-white px-4">
-          <img
-            class="absolute right-0 -z-10 h-[113px] w-[113px]"
-            src="./images/shape2.svg"
-            alt=""
-          />
-          <div class="py-14">
-            <h3 class="mb-5 text-center text-xl font-semibold text-primary">
-              Pricing & plans
-            </h3>
-            <h2
-              class="mb-4 text-center text-4xl font-bold tracking-tighter text-accent"
+          <div
+            class="flex items-center justify-center gap-x-7 rounded-lg bg-[rgba(255,_200,_62,_.1)] px-10 py-5"
+          >
+            <p class="text-6xl font-bold text-accent">10K</p>
+            <span class="text-base font-semibold text-accent"
+              >5 Stars Rating</span
             >
-              We have exclusive plan in our pricing
-            </h2>
-            <p class="mb-10 text-base text-accent opacity-80">
-              An enim nullam tempor sapien gravida donec enim ipsum porta justo
-              integena gna at pretium
-            </p>
-            <div class="grid gap-y-4">
-              <div
-                class="rounded-lg p-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
-              >
-                <div class="mb-5 text-xl text-[#00BB98]">Starter Plan</div>
-                <h2 class="mb-1 text-6xl font-semibold text-accent">
-                  <span class="text-xl text-accent">$</span>0
-                </h2>
-                <p class="mb-7 text-base text-accent opacity-70">Per Month</p>
-                <hr
-                  class="mb-7 border border-solid border-[rgba(55,_124,_253,_.1)]"
-                />
-                <ul
-                  class="mb-10 list-inside space-y-4 text-lg font-normal text-accent [list-style-image:_url('./images/list-style-image.svg')]"
-                >
-                  <li>10 GB Disk Space</li>
-                  <li>Free Custom Domain</li>
-                  <li>1 Year Support</li>
-                  <li>Basic Statistics</li>
-                  <li>500 Queries</li>
-                </ul>
-                <a
-                  class="inline-block rounded-lg border-2 border-secondary px-8 py-3 text-lg font-medium text-secondary"
-                  href=""
-                  >Try Free</a
-                >
-              </div>
-              <div
-                class="rounded-lg p-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
-              >
-                <div class="mb-5 text-xl text-[#2B59FF]">Basic Plan</div>
-                <h2 class="mb-1 text-6xl font-semibold text-accent">
-                  <span class="text-xl text-accent">$</span>45
-                </h2>
-                <p class="mb-7 text-base text-accent opacity-70">Per Month</p>
-                <hr
-                  class="mb-7 border border-solid border-[rgba(55,_124,_253,_.1)]"
-                />
-                <ul
-                  class="mb-10 list-inside space-y-4 text-lg font-normal text-accent [list-style-image:_url('./images/list-style-image.svg')]"
-                >
-                  <li>800 GB Disk Space</li>
-                  <li>Free Custom Domain</li>
-                  <li>Unlimited Year Support</li>
-                  <li>Full Statistics</li>
-                  <li>UnlimitedQueries</li>
-                </ul>
-                <a
-                  class="inline-block rounded-lg border-2 border-secondary px-8 py-3 text-lg font-medium text-secondary"
-                  href=""
-                  >Try Free</a
-                >
-              </div>
-              <div
-                class="rounded-lg p-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
-              >
-                <div class="mb-5 text-xl text-secondary">Premium Plan</div>
-                <h2 class="mb-1 text-6xl font-semibold text-accent">
-                  <span class="text-xl text-accent">$</span>100
-                </h2>
-                <p class="mb-7 text-base text-accent opacity-70">Per Month</p>
-                <hr
-                  class="mb-7 border border-solid border-[rgba(55,_124,_253,_.1)]"
-                />
-                <ul
-                  class="mb-10 list-inside space-y-4 text-lg font-normal text-accent [list-style-image:_url('./images/list-style-image.svg')]"
-                >
-                  <li>10 GB Disk Space</li>
-                  <li>Free Custom Domain</li>
-                  <li>1 Year Support</li>
-                  <li>Basic Statistics</li>
-                  <li>500 Queries</li>
-                </ul>
-                <a
-                  class="inline-block rounded-lg border-2 border-secondary px-8 py-3 text-lg font-medium text-secondary"
-                  href=""
-                  >Try Free</a
-                >
-              </div>
-            </div>
           </div>
-        </section>
-        <section class="isolate bg-[rgba(55,_124,_253,_.02)] px-4 py-14">
-          <h2 class="mb-5 text-center text-xl text-primary">Testimonials</h2>
-          <h3 class="mb-10 text-center text-4xl font-bold text-accent">
-            What our happy clients say
+        </div>
+      </section>
+      <section class="isolate bg-white px-4">
+        <img
+          class="pointer-events-none absolute left-0 -z-10 h-[120px] w-[120px]"
+          src="./images/shape.svg"
+          alt=""
+        />
+        <div class="mb-10 py-14">
+          <h3 class="mb-5 text-center text-xl font-semibold text-primary">
+            Services
           </h3>
-          <div class="relative z-10">
+          <h2 class="text-center text-4xl font-bold">
+            The most useful services for your business
+          </h2>
+          <p
+            class="mt-4 mb-10 text-center text-base font-normal text-accent opacity-80"
+          >
+            An enim nullam tempor sapien gravida donec enim ipsum porta justo
+            integer at odio velna gna at pretium
+          </p>
+          <div class="service-box grid gap-y-6">
             <div
-              class="rounded-lg bg-white px-6 py-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+              class="flex flex-col items-center justify-center rounded-lg py-10 px-4 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
             >
-              <div
-                class="absolute inset-3 -z-20 translate-y-6 rounded-lg bg-white [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
-              ></div>
-              <div
-                class="absolute inset-6 -z-30 translate-y-12 rounded-lg bg-white [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
-              ></div>
-              <p class="mb-7 text-center text-lg text-accent">
-                OMG! I cannot believe that I have got a brand new landing page
-                after getting appmax. It was super easy to edit and publish.
+              <span
+                class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
+                ><svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.1818 14.5455H25.4545C25.9368 14.5455 26.3992 14.3539 26.7402 14.0129C27.0812 13.6719 27.2727 13.2095 27.2727 12.7273C27.2727 12.2451 27.0812 11.7826 26.7402 11.4416C26.3992 11.1006 25.9368 10.9091 25.4545 10.9091H21.8182V9.09091C21.8182 8.6087 21.6266 8.14623 21.2857 7.80526C20.9447 7.46428 20.4822 7.27273 20 7.27273C19.5178 7.27273 19.0553 7.46428 18.7144 7.80526C18.3734 8.14623 18.1818 8.6087 18.1818 9.09091V10.9091C16.7352 10.9091 15.3478 11.4838 14.3249 12.5067C13.302 13.5296 12.7273 14.917 12.7273 16.3636C12.7273 17.8103 13.302 19.1977 14.3249 20.2206C15.3478 21.2435 16.7352 21.8182 18.1818 21.8182H21.8182C22.3004 21.8182 22.7629 22.0097 23.1038 22.3507C23.4448 22.6917 23.6364 23.1541 23.6364 23.6364C23.6364 24.1186 23.4448 24.581 23.1038 24.922C22.7629 25.263 22.3004 25.4545 21.8182 25.4545H14.5455C14.0632 25.4545 13.6008 25.6461 13.2598 25.9871C12.9188 26.3281 12.7273 26.7905 12.7273 27.2727C12.7273 27.7549 12.9188 28.2174 13.2598 28.5584C13.6008 28.8993 14.0632 29.0909 14.5455 29.0909H18.1818V30.9091C18.1818 31.3913 18.3734 31.8538 18.7144 32.1947C19.0553 32.5357 19.5178 32.7273 20 32.7273C20.4822 32.7273 20.9447 32.5357 21.2857 32.1947C21.6266 31.8538 21.8182 31.3913 21.8182 30.9091V29.0909C23.2648 29.0909 24.6522 28.5162 25.6751 27.4933C26.6981 26.4704 27.2727 25.083 27.2727 23.6364C27.2727 22.1897 26.6981 20.8023 25.6751 19.7794C24.6522 18.7565 23.2648 18.1818 21.8182 18.1818H18.1818C17.6996 18.1818 17.2372 17.9903 16.8962 17.6493C16.5552 17.3083 16.3636 16.8458 16.3636 16.3636C16.3636 15.8814 16.5552 15.419 16.8962 15.078C17.2372 14.737 17.6996 14.5455 18.1818 14.5455ZM20 0C16.0444 0 12.1776 1.17298 8.8886 3.37061C5.59962 5.56823 3.03617 8.69181 1.52242 12.3463C0.00866576 16.0009 -0.387401 20.0222 0.384303 23.9018C1.15601 27.7814 3.06082 31.3451 5.85787 34.1421C8.65492 36.9392 12.2186 38.844 16.0982 39.6157C19.9778 40.3874 23.9992 39.9913 27.6537 38.4776C31.3082 36.9638 34.4318 34.4004 36.6294 31.1114C38.827 27.8224 40 23.9556 40 20C40 14.6957 37.8929 9.60859 34.1421 5.85786C30.3914 2.10714 25.3043 0 20 0ZM20 36.3636C16.7636 36.3636 13.5998 35.4039 10.9089 33.6059C8.21787 31.8078 6.1205 29.2522 4.88198 26.2621C3.64345 23.272 3.3194 19.9818 3.95079 16.8076C4.58219 13.6334 6.14067 10.7177 8.42917 8.42916C10.7177 6.14066 13.6334 4.58218 16.8076 3.95079C19.9819 3.31939 23.272 3.64345 26.2621 4.88197C29.2522 6.12049 31.8078 8.21786 33.6059 10.9088C35.4039 13.5998 36.3636 16.7636 36.3636 20C36.3636 24.3399 34.6396 28.5021 31.5708 31.5708C28.5021 34.6396 24.3399 36.3636 20 36.3636Z"
+                    fill="#377CFD"
+                  />
+                </svg>
+              </span>
+              <h3 class="mb-4 text-center text-xl font-bold">
+                Wealth Nurturing
+              </h3>
+              <p class="text-center text-base text-[#000B33] opacity-70">
+                With lots of unique blocks you can easily create a page without
+                coding with Appmax easily.
               </p>
-              <div class="flex items-center justify-center gap-x-6">
-                <img
-                  class="h-[70px]] w-[70px]"
-                  src="./images/Testimonial-img.png"
-                  alt="An image of a Happy Customer"
-                />
-                <div>
-                  <h3 class="mb-1 text-xl font-bold text-accent">
-                    Jenny Wilson
-                  </h3>
-                  <p class="text-accent opacity-70">Web Developer</p>
-                </div>
-              </div>
-              <img
-                class="absolute right-2 bottom-2 h-[5rem] w-[5rem]"
-                src="./images/quote.svg"
-                alt=""
-              />
+            </div>
+            <div
+              class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
+            >
+              <span
+                class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
+                ><svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 28C11.7956 28 12.5587 27.6839 13.1213 27.1213C13.6839 26.5587 14 25.7956 14 25C14.0098 24.9002 14.0098 24.7998 14 24.7L19.58 19.12H20.5L23.72 22.34V22.5C23.72 23.2956 24.0361 24.0587 24.5987 24.6213C25.1613 25.1839 25.9243 25.5 26.72 25.5C27.5156 25.5 28.2787 25.1839 28.8413 24.6213C29.4039 24.0587 29.72 23.2956 29.72 22.5V22.34L37 15C37.5933 15 38.1734 14.8241 38.6667 14.4944C39.1601 14.1648 39.5446 13.6962 39.7716 13.1481C39.9987 12.5999 40.0581 11.9967 39.9424 11.4147C39.8266 10.8328 39.5409 10.2982 39.1213 9.87868C38.7018 9.45912 38.1672 9.1734 37.5853 9.05764C37.0033 8.94189 36.4001 9.0013 35.852 9.22836C35.3038 9.45542 34.8352 9.83994 34.5056 10.3333C34.1759 10.8266 34 11.4067 34 12C33.9902 12.0998 33.9902 12.2002 34 12.3L26.78 19.52H26.46L23 16C23 15.2044 22.6839 14.4413 22.1213 13.8787C21.5587 13.3161 20.7956 13 20 13C19.2044 13 18.4413 13.3161 17.8787 13.8787C17.3161 14.4413 17 15.2044 17 16L11 22C10.2044 22 9.44129 22.3161 8.87868 22.8787C8.31607 23.4413 8 24.2044 8 25C8 25.7956 8.31607 26.5587 8.87868 27.1213C9.44129 27.6839 10.2044 28 11 28V28ZM38 36H4V2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V38C0 38.5304 0.210714 39.0391 0.585786 39.4142C0.960859 39.7893 1.46957 40 2 40H38C38.5304 40 39.0391 39.7893 39.4142 39.4142C39.7893 39.0391 40 38.5304 40 38C40 37.4696 39.7893 36.9609 39.4142 36.5858C39.0391 36.2107 38.5304 36 38 36Z"
+                    fill="#377CFD"
+                  />
+                </svg>
+              </span>
+              <h3 class="mb-4 text-center text-xl font-bold">Steady Growth</h3>
+              <p class="text-center text-base text-[#000B33] opacity-70">
+                With lots of unique blocks you can easily create a page without
+                coding with Appmax easily.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
+            >
+              <span
+                class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
+                ><svg
+                  width="30"
+                  height="40"
+                  viewBox="0 0 30 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.7985 3.31124C22.1264 1.93602 20.1684 0.951432 18.0673 0.429308C15.9662 -0.0928165 13.7751 -0.139305 11.6538 0.293235C8.82915 0.863787 6.23769 2.26053 4.20816 4.30624C2.17864 6.35195 0.802523 8.95443 0.254424 11.7835C-0.145831 13.9047 -0.073098 16.088 0.467434 18.1779C1.00797 20.2677 2.00298 22.2126 3.38151 23.8737C4.66087 25.3173 5.39418 27.1635 5.45412 29.0915V34.5458C5.45412 35.9923 6.02876 37.3796 7.05163 38.4025C8.07449 39.4254 9.46179 40 10.9083 40H18.1806C19.6272 40 21.0145 39.4254 22.0374 38.4025C23.0602 37.3796 23.6349 35.9923 23.6349 34.5458V29.437C23.6959 27.3083 24.4779 25.2635 25.8529 23.6373C28.2621 20.6571 29.3977 16.8465 29.0131 13.0336C28.6284 9.22077 26.7544 5.7138 23.7985 3.27488V3.31124ZM19.9987 34.5458C19.9987 35.028 19.8072 35.4904 19.4662 35.8313C19.1253 36.1723 18.6628 36.3638 18.1806 36.3638H10.9083C10.4262 36.3638 9.96373 36.1723 9.62277 35.8313C9.28182 35.4904 9.09027 35.028 9.09027 34.5458V32.7277H19.9987V34.5458ZM23.0349 21.3829C21.2068 23.5511 20.1403 26.2591 19.9987 29.0915H16.3626V23.6373C16.3626 23.1551 16.171 22.6927 15.8301 22.3517C15.4891 22.0108 15.0267 21.8192 14.5445 21.8192C14.0623 21.8192 13.5999 22.0108 13.2589 22.3517C12.918 22.6927 12.7264 23.1551 12.7264 23.6373V29.0915H9.09027C9.0423 26.3064 8.01205 23.6278 6.18135 21.5284C4.9735 20.0812 4.16127 18.3457 3.82387 16.4911C3.48647 14.6365 3.63541 12.7262 4.25617 10.9463C4.87692 9.16643 5.94831 7.5778 7.36587 6.33529C8.78342 5.09279 10.4988 4.23882 12.3446 3.85666C13.931 3.53003 15.5702 3.56076 17.1432 3.9466C18.7162 4.33245 20.1836 5.06373 21.4387 6.08736C22.6939 7.11098 23.7054 8.40127 24.3997 9.86453C25.094 11.3278 25.4538 12.9273 25.4529 14.5469C25.4664 17.0375 24.6113 19.4548 23.0349 21.3829Z"
+                    fill="#377CFD"
+                  />
+                </svg>
+              </span>
+              <h3 class="mb-4 text-center text-xl font-bold">
+                Boost SEO Ranking
+              </h3>
+              <p class="text-center text-base text-[#000B33] opacity-70">
+                With lots of unique blocks you can easily create a page without
+                coding with Appmax easily.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
+            >
+              <span
+                class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
+                ><svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30.1195 40H6.02391C4.42627 40 2.89406 39.3653 1.76436 38.2356C0.63466 37.1059 0 35.5737 0 33.9761V13.8964C0 12.2988 0.63466 10.7665 1.76436 9.63685C2.89406 8.50714 4.42627 7.87249 6.02391 7.87249H8.03188C8.06565 6.17101 8.63899 4.52423 9.6692 3.16968C10.6994 1.81512 12.1333 0.822801 13.7639 0.335839C15.3946 -0.151123 17.1377 -0.107555 18.742 0.460258C20.3463 1.02807 21.7288 2.09078 22.6901 3.49511C23.5905 4.7785 24.0806 6.30479 24.0956 7.87249H30.1195C30.6521 7.87249 31.1628 8.08404 31.5394 8.46061C31.916 8.83717 32.1275 9.34791 32.1275 9.88045V15.9044C33.829 15.9381 35.4758 16.5115 36.8303 17.5417C38.1849 18.5719 39.1772 20.0057 39.6642 21.6364C40.1511 23.267 40.1076 25.0102 39.5397 26.6145C38.9719 28.2188 37.9092 29.6013 36.5049 30.5625C35.2215 31.463 33.6952 31.9531 32.1275 31.9681V37.992C32.1275 38.5246 31.916 39.0353 31.5394 39.4119C31.1628 39.7884 30.6521 40 30.1195 40ZM6.02391 11.8884C5.49136 11.8884 4.98063 12.1 4.60406 12.4765C4.22749 12.8531 4.01594 13.3638 4.01594 13.8964V33.9761C4.01594 34.5086 4.22749 35.0194 4.60406 35.3959C4.98063 35.7725 5.49136 35.9841 6.02391 35.9841H28.1116V29.5987C28.1098 29.2768 28.1856 28.9591 28.3323 28.6725C28.4791 28.386 28.6926 28.1389 28.9549 27.9522C29.2164 27.7657 29.5188 27.6447 29.8368 27.5993C30.1547 27.5538 30.4789 27.5854 30.7822 27.6911C31.3544 27.9246 31.9777 28.0048 32.5904 27.9238C33.2031 27.8428 33.7841 27.6034 34.276 27.2293C34.7657 26.9307 35.1857 26.5307 35.5078 26.0562C35.8299 25.5817 36.0467 25.0437 36.1435 24.4784C36.2209 23.9082 36.1749 23.3281 36.0086 22.7773C35.8423 22.2264 35.5596 21.7178 35.1796 21.2857C34.6657 20.6615 33.9659 20.2177 33.1821 20.019C32.3983 19.8204 31.5715 19.8772 30.8223 20.1813C30.5191 20.2871 30.1949 20.3186 29.8769 20.2732C29.559 20.2278 29.2566 20.1068 28.9951 19.9203C28.7328 19.7336 28.5193 19.4865 28.3725 19.1999C28.2257 18.9134 28.15 18.5957 28.1517 18.2738V11.8884H21.7262C21.3962 11.9071 21.0667 11.8441 20.7669 11.7049C20.4671 11.5656 20.2063 11.3546 20.0077 11.0904C19.8091 10.8262 19.6787 10.517 19.6282 10.1904C19.5777 9.86373 19.6087 9.52966 19.7183 9.21782C19.9517 8.64557 20.0319 8.02233 19.9509 7.40962C19.8699 6.7969 19.6305 6.2159 19.2564 5.72396C18.96 5.22029 18.554 4.78979 18.0685 4.46434C17.5831 4.1389 17.0306 3.92687 16.4521 3.84394C15.8735 3.76102 15.2838 3.80934 14.7264 3.98531C14.1691 4.16129 13.6585 4.46042 13.2325 4.86053C12.8369 5.25292 12.5273 5.72334 12.3233 6.24188C12.1193 6.76042 12.0255 7.31572 12.0478 7.87249C12.0525 8.33306 12.1409 8.78893 12.3089 9.21782C12.415 9.52147 12.4467 9.84617 12.4012 10.1646C12.3556 10.483 12.2343 10.7859 12.0473 11.0476C11.8604 11.3093 11.6133 11.5223 11.3268 11.6687C11.0404 11.815 10.7229 11.8904 10.4013 11.8884H6.02391Z"
+                    fill="#377CFD"
+                  />
+                </svg>
+              </span>
+              <h3 class="mb-4 text-center text-xl font-bold">
+                App Integrations
+              </h3>
+              <p class="text-center text-base text-[#000B33] opacity-70">
+                With lots of unique blocks you can easily create a page without
+                coding with Appmax easily.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
+            >
+              <span
+                class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
+                ><svg
+                  width="44"
+                  height="40"
+                  viewBox="0 0 44 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.7577 13.5664L24.8845 20.7091C24.0699 21.3488 23.0643 21.6965 22.0286 21.6965C20.993 21.6965 19.9873 21.3488 19.1728 20.7091L10.2246 13.5664"
+                    stroke="#377CFD"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.167 2H31.7773C34.6061 2.0312 37.2955 3.2272 39.2237 5.3072C40.1788 6.3393 40.9155 7.55379 41.3894 8.87774C41.8634 10.2017 42.0649 11.6078 41.9818 13.0115V26.5898C42.0649 27.9935 41.8634 29.3996 41.3894 30.7236C40.9155 32.0475 40.1788 33.262 39.2237 34.2941C38.2723 35.3223 37.1213 36.1458 35.841 36.7144C34.5608 37.2831 33.178 37.5848 31.7773 37.6013H12.167C6.09344 37.6013 2 32.6613 2 26.5898V13.0115C2 6.94 6.09344 2 12.167 2Z"
+                    stroke="#377CFD"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <h3 class="mb-4 text-center text-xl font-bold">
+                Best Email Templates
+              </h3>
+              <p class="text-center text-base text-[#000B33] opacity-70">
+                With lots of unique blocks you can easily create a page without
+                coding with Appmax easily.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center rounded-lg border py-10 px-4"
+            >
+              <span
+                class="mb-7 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent2"
+                ><svg
+                  width="38"
+                  height="44"
+                  viewBox="0 0 38 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.1117 39.7046C15.1258 40.9601 16.5911 41.7688 18.1939 41.9576C19.7968 42.1464 21.4098 41.7002 22.6878 40.7146C23.0798 40.4226 23.4319 40.0826 23.7359 39.7046M2.0015 25.5744V25.1364C2.06719 23.8379 2.48325 22.5814 3.20552 21.5003C4.40685 20.203 5.23237 18.6031 5.59356 16.8722C5.59356 15.5402 5.59356 14.1882 5.70956 12.8542C6.30957 6.43607 12.6557 2 18.9218 2H19.0778C25.3439 2 31.69 6.43607 32.312 12.8542C32.428 14.1882 32.312 15.5402 32.408 16.8722C32.7736 18.6064 33.5976 20.2108 34.794 21.5183C35.5241 22.5943 35.9401 23.8464 35.9981 25.1384V25.5564C36.0421 27.2964 35.4421 28.9944 34.31 30.3365C32.802 31.9099 30.7748 32.8833 28.6039 33.0765C22.2138 33.7625 15.7657 33.7625 9.37562 33.0765C7.20718 32.8747 5.18281 31.9026 3.66953 30.3365C2.5584 29.0024 1.9661 27.3122 2.0015 25.5764V25.5744Z"
+                    stroke="#377CFD"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <h3 class="mb-4 text-center text-xl font-bold">
+                Automated Reminders
+              </h3>
+              <p class="text-center text-base text-[#000B33] opacity-70">
+                With lots of unique blocks you can easily create a page without
+                coding with Appmax easily.
+              </p>
             </div>
           </div>
-          <div class="mt-12 flex items-center justify-center gap-x-4">
-            <span
-              class="inline-block h-[10px] w-[10px] rounded-full bg-secondary"
-            ></span>
-            <span
-              class="inline-block h-[10px] w-[10px] rounded-full bg-secondary opacity-20"
-            ></span>
-            <span
-              class="inline-block h-[10px] w-[10px] rounded-full bg-secondary opacity-20"
-            ></span>
-          </div>
-        </section>
-        <section class="isolate bg-primary px-4 py-14">
-          <h2 class="mb-4 text-center text-4xl font-bold text-white">
-            Appmax is available for all devices
+        </div>
+      </section>
+      <section class="bg-[rgba(55,_124,_253,_.02)] px-4 py-14">
+        <img class="mb-10" src="./images/Image.png" alt="" />
+        <div>
+          <h3 class="mb-5 text-xl font-semibold text-primary">
+            Awesome software
+          </h3>
+          <h2 class="mb-4 text-4xl font-bold">
+            Get tips and tricks on how to skyrocket your sales with Appmax
           </h2>
-          <p class="mb-7 text-center text-base text-white">
-            A Private Limited is the most . The limited liabilityis, in fact,
-            the only company allowed by Companies.
+          <p class="mb-7 text-base text-accent opacity-80">
+            An enim nullam tempor sapien gravida donec enim ipsum porta justo
+            integer at odio velna vitae auctor integer congue magna at pretium
           </p>
-          <div class="flex items-center justify-center gap-x-4">
-            <a class="" href=""><img src="./images/App Store.png" alt="" /></a>
-            <a href=""><img src="./images/Play Store.png" alt="" /></a>
-          </div>
-        </section>
-        <section class="bg-white px-4 py-14">
-          <img
-            class="pointer-events-none mb-7"
-            src="./images/Logo dark.svg"
-            alt="Company Logo"
-          />
-          <p class="mb-10 text-base text-accent opacity-70">
-            There are many variations of passages of Lorem the Ipsum available
-            but it is the majority of suffered that a alteration in that some
-            dummy text.
+          <a
+            class="inline-block justify-start rounded-lg bg-secondary px-8 py-3 text-lg font-medium text-white"
+            href=""
+            >Get Started</a
+          >
+        </div>
+      </section>
+      <section class="isolate bg-white px-4">
+        <img
+          class="absolute right-0 -z-10 h-[113px] w-[113px]"
+          src="./images/shape2.svg"
+          alt=""
+        />
+        <div class="py-14">
+          <h3 class="mb-5 text-center text-xl font-semibold text-primary">
+            Pricing & plans
+          </h3>
+          <h2
+            class="mb-4 text-center text-4xl font-bold tracking-tighter text-accent"
+          >
+            We have exclusive plan in our pricing
+          </h2>
+          <p class="mb-10 text-base text-accent opacity-80">
+            An enim nullam tempor sapien gravida donec enim ipsum porta justo
+            integena gna at pretium
           </p>
-          <div class="mb-12 flex items-center gap-x-4">
-            <a class="h-6 w-6" href=""
-              ><svg
-                width="8"
-                height="14"
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <div class="grid gap-y-4">
+            <div
+              class="rounded-lg p-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+            >
+              <div class="mb-5 text-xl text-[#00BB98]">Starter Plan</div>
+              <h2 class="mb-1 text-6xl font-semibold text-accent">
+                <span class="text-xl text-accent">$</span>0
+              </h2>
+              <p class="mb-7 text-base text-accent opacity-70">Per Month</p>
+              <hr
+                class="mb-7 border border-solid border-[rgba(55,_124,_253,_.1)]"
+              />
+              <ul
+                class="mb-10 list-inside space-y-4 text-lg font-normal text-accent [list-style-image:_url('./images/list-style-image.svg')]"
               >
-                <path
-                  d="M7.28649 0.35229L5.60774 0.349609C3.72173 0.349609 2.5029 1.5939 2.5029 3.51977V4.98142H0.814993C0.669137 4.98142 0.551025 5.09908 0.551025 5.24422V7.36199C0.551025 7.50712 0.669272 7.62465 0.814993 7.62465H2.5029V12.9685C2.5029 13.1136 2.62101 13.2311 2.76687 13.2311H4.96911C5.11496 13.2311 5.23307 13.1135 5.23307 12.9685V7.62465H7.20663C7.35249 7.62465 7.4706 7.50712 7.4706 7.36199L7.4714 5.24422C7.4714 5.17453 7.44353 5.10779 7.3941 5.05848C7.34467 5.00916 7.27734 4.98142 7.2073 4.98142H5.23307V3.74236C5.23307 3.14682 5.3757 2.84449 6.15534 2.84449L7.28622 2.84409C7.43194 2.84409 7.55006 2.72642 7.55006 2.58142V0.614951C7.55006 0.470085 7.43208 0.352558 7.28649 0.35229Z"
-                  fill="#000B33"
-                />
-              </svg>
-            </a>
-            <a class="h-6 w-6" href=""
-              ><svg
-                width="14"
-                height="12"
-                viewBox="0 0 14 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                <li>10 GB Disk Space</li>
+                <li>Free Custom Domain</li>
+                <li>1 Year Support</li>
+                <li>Basic Statistics</li>
+                <li>500 Queries</li>
+              </ul>
+              <a
+                class="inline-block rounded-lg border-2 border-secondary px-8 py-3 text-lg font-medium text-secondary"
+                href=""
+                >Try Free</a
               >
-                <path
-                  d="M14 1.83826C13.4816 2.06455 12.9291 2.21455 12.3532 2.28738C12.9457 1.93536 13.3979 1.3822 13.6105 0.71546C13.0581 1.0432 12.4481 1.27469 11.7981 1.40388C11.2736 0.848115 10.526 0.503906 9.7104 0.503906C8.12805 0.503906 6.85416 1.7819 6.85416 3.34861C6.85416 3.57404 6.87333 3.7908 6.92038 3.99715C4.54424 3.88183 2.4417 2.74863 1.02926 1.02239C0.782675 1.4481 0.638033 1.93536 0.638033 2.45991C0.638033 3.44485 1.14777 4.31795 1.90757 4.82342C1.44838 4.81475 0.997896 4.6821 0.61625 4.47315C0.61625 4.48182 0.61625 4.49309 0.61625 4.50436C0.61625 5.88639 1.60696 7.03434 2.90613 7.29878C2.67348 7.36207 2.41992 7.39242 2.15677 7.39242C1.97379 7.39242 1.78907 7.38201 1.61567 7.34386C1.98599 8.47013 3.03683 9.29814 4.28632 9.32502C3.31391 10.0819 2.07923 10.538 0.742594 10.538C0.508204 10.538 0.283399 10.5276 0.0585938 10.499C1.32465 11.3114 2.82509 11.7752 4.44317 11.7752C9.70256 11.7752 12.578 7.4401 12.578 3.68242C12.578 3.5567 12.5736 3.43532 12.5675 3.3148C13.1348 2.91423 13.6114 2.41396 14 1.83826Z"
-                  fill="#000B33"
-                />
-              </svg>
-            </a>
-            <a class="h-6 w-6" href=""
-              ><svg
-                width="13"
-                height="13"
-                viewBox="0 0 13 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            </div>
+            <div
+              class="rounded-lg p-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+            >
+              <div class="mb-5 text-xl text-[#2B59FF]">Basic Plan</div>
+              <h2 class="mb-1 text-6xl font-semibold text-accent">
+                <span class="text-xl text-accent">$</span>45
+              </h2>
+              <p class="mb-7 text-base text-accent opacity-70">Per Month</p>
+              <hr
+                class="mb-7 border border-solid border-[rgba(55,_124,_253,_.1)]"
+              />
+              <ul
+                class="mb-10 list-inside space-y-4 text-lg font-normal text-accent [list-style-image:_url('./images/list-style-image.svg')]"
               >
-                <path
-                  d="M8.3934 0.503906H3.81518C1.70844 0.503906 0 2.20389 0 4.3002V8.85576C0 10.9521 1.70844 12.6521 3.81518 12.6521H8.3934C10.5001 12.6521 12.2086 10.9521 12.2086 8.85576V4.3002C12.2086 2.20389 10.5001 0.503906 8.3934 0.503906ZM11.064 8.85576C11.064 10.3211 9.86606 11.5132 8.3934 11.5132H3.81518C2.34252 11.5132 1.14455 10.3211 1.14455 8.85576V4.3002C1.14455 2.83483 2.34252 1.6428 3.81518 1.6428H8.3934C9.86606 1.6428 11.064 2.83483 11.064 4.3002V8.85576Z"
-                  fill="#000B33"
-                />
-                <path
-                  d="M6.1105 3.54785C4.42495 3.54785 3.05835 4.90769 3.05835 6.58489C3.05835 8.26209 4.42495 9.62193 6.1105 9.62193C7.79604 9.62193 9.16264 8.26209 9.16264 6.58489C9.16264 4.90769 7.79604 3.54785 6.1105 3.54785ZM6.1105 8.48304C5.05903 8.48304 4.2029 7.63115 4.2029 6.58489C4.2029 5.53787 5.05903 4.68674 6.1105 4.68674C7.16196 4.68674 8.01809 5.53787 8.01809 6.58489C8.01809 7.63115 7.16196 8.48304 6.1105 8.48304Z"
-                  fill="#000B33"
-                />
-                <path
-                  d="M9.37697 3.72744C9.60216 3.72744 9.7847 3.5458 9.7847 3.32173C9.7847 3.09766 9.60216 2.91602 9.37697 2.91602C9.15179 2.91602 8.96924 3.09766 8.96924 3.32173C8.96924 3.5458 9.15179 3.72744 9.37697 3.72744Z"
-                  fill="#000B33"
-                />
-              </svg>
-            </a>
-            <a class="h-6 w-6" href=""
-              ><img src="./images/Linkedin.svg" alt=""
-            /></a>
+                <li>800 GB Disk Space</li>
+                <li>Free Custom Domain</li>
+                <li>Unlimited Year Support</li>
+                <li>Full Statistics</li>
+                <li>UnlimitedQueries</li>
+              </ul>
+              <a
+                class="inline-block rounded-lg border-2 border-secondary px-8 py-3 text-lg font-medium text-secondary"
+                href=""
+                >Try Free</a
+              >
+            </div>
+            <div
+              class="rounded-lg p-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+            >
+              <div class="mb-5 text-xl text-secondary">Premium Plan</div>
+              <h2 class="mb-1 text-6xl font-semibold text-accent">
+                <span class="text-xl text-accent">$</span>100
+              </h2>
+              <p class="mb-7 text-base text-accent opacity-70">Per Month</p>
+              <hr
+                class="mb-7 border border-solid border-[rgba(55,_124,_253,_.1)]"
+              />
+              <ul
+                class="mb-10 list-inside space-y-4 text-lg font-normal text-accent [list-style-image:_url('./images/list-style-image.svg')]"
+              >
+                <li>10 GB Disk Space</li>
+                <li>Free Custom Domain</li>
+                <li>1 Year Support</li>
+                <li>Basic Statistics</li>
+                <li>500 Queries</li>
+              </ul>
+              <a
+                class="inline-block rounded-lg border-2 border-secondary px-8 py-3 text-lg font-medium text-secondary"
+                href=""
+                >Try Free</a
+              >
+            </div>
           </div>
-          <div>
-            <p class="mb-5 font-semibold text-accent">Services</p>
-            <ul class="mb-12 space-y-4 font-normal text-accent opacity-70">
-              <li>Incident Responder</li>
-              <li>Secure Managed IT</li>
-              <li>Check website Url</li>
-              <li>Locker Security</li>
-            </ul>
-            <p class="mb-5 font-semibold text-accent">About Us</p>
-            <ul class="mb-12 space-y-4 font-normal text-accent opacity-70">
-              <li>Payment Plans</li>
-              <li>Make saving More</li>
-              <li>Tax Calculator</li>
-              <li>Talk To Us</li>
-            </ul>
-            <p class="mb-5 font-semibold text-accent">Contact</p>
-            <ul class="mb-12 space-y-4 font-normal text-accent opacity-70">
-              <li class="max-w-[13.9375rem]">
-                455 West Orchard Street Kings Mountain, NC 280867r
-              </li>
-              <li class="align-middle">
-                <span class="mr-2 inline-block align-middle">
-                  <svg
-                    width="16"
-                    height="17"
-                    viewBox="0 0 16 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.7161 10.5054C13.7365 10.5054 12.7747 10.3521 11.8633 10.0508C11.4166 9.89844 10.8676 10.0382 10.595 10.3183L8.79598 11.6768C6.70961 10.5627 5.42444 9.27758 4.32595 7.20624L5.64407 5.45354C5.98653 5.11143 6.10936 4.6117 5.96219 4.14281C5.65969 3.22628 5.50603 2.26461 5.50603 1.28431C5.50607 0.576134 4.93011 0 4.2222 0H1.28387C0.575957 0 0 0.576134 0 1.28427C0 9.40133 6.60157 16.0049 14.7161 16.0049C15.424 16.0049 16 15.4288 16 14.7206V11.7896C16 11.0815 15.424 10.5054 14.7161 10.5054Z"
-                      fill="#FD4C5C"
-                    />
-                  </svg> </span
-                >+088 (246) 642-27-10
-              </li>
-              <li class="align-middle">
-                <span class="mr-2 inline-block align-middle">
-                  <svg
-                    width="19"
-                    height="13"
-                    viewBox="0 0 19 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.392059 1.04278C2.96872 3.0346 7.48997 6.53881 8.81882 7.63143C8.99721 7.7789 9.18854 7.85387 9.38718 7.85387C9.5854 7.85387 9.77641 7.7796 9.95439 7.63283C11.2844 6.53914 15.8056 3.0346 18.3823 1.04278C18.5428 0.919011 18.5672 0.701458 18.4373 0.550141C18.1371 0.200483 17.6894 0 17.2097 0H1.56467C1.08494 0 0.637259 0.200484 0.337057 0.550175C0.207179 0.701458 0.231636 0.919011 0.392059 1.04278Z"
-                      fill="#FD4C5C"
-                    />
-                    <path
-                      d="M18.5472 2.1202C18.4085 2.06129 18.2454 2.08184 18.1301 2.17181C15.2726 4.38288 11.6257 7.21703 10.4783 8.16078C9.83427 8.6914 8.94048 8.6914 8.29498 8.16007C7.07195 7.15424 2.97657 3.97636 0.643965 2.17177C0.527837 2.08181 0.364371 2.06196 0.226865 2.12016C0.0886267 2.17877 0 2.30498 0 2.44408V11.4223C0 12.2099 0.701644 12.8504 1.56452 12.8504H17.2096C18.0724 12.8504 18.7741 12.2099 18.7741 11.4223V2.44408C18.7741 2.30498 18.6854 2.17844 18.5472 2.1202Z"
-                      fill="#FD4C5C"
-                    />
-                  </svg>
-                </span>
-                example@gmail.com
-              </li>
-            </ul>
+        </div>
+      </section>
+      <section class="isolate bg-[rgba(55,_124,_253,_.02)] px-4 py-14">
+        <h2 class="mb-5 text-center text-xl text-primary">Testimonials</h2>
+        <h3 class="mb-10 text-center text-4xl font-bold text-accent">
+          What our happy clients say
+        </h3>
+        <div class="relative z-10">
+          <div
+            class="rounded-lg bg-white px-6 py-10 [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+          >
+            <div
+              class="absolute inset-3 -z-20 translate-y-6 rounded-lg bg-white [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+            ></div>
+            <div
+              class="absolute inset-6 -z-30 translate-y-12 rounded-lg bg-white [box-shadow:0px_4px_40px_rgba(43,_89,_255,_0.08)]"
+            ></div>
+            <p class="mb-7 text-center text-lg text-accent">
+              OMG! I cannot believe that I have got a brand new landing page
+              after getting appmax. It was super easy to edit and publish.
+            </p>
+            <div class="flex items-center justify-center gap-x-6">
+              <img
+                class="h-[70px]] w-[70px]"
+                src="./images/Testimonial-img.png"
+                alt="An image of a Happy Customer"
+              />
+              <div>
+                <h3 class="mb-1 text-xl font-bold text-accent">Jenny Wilson</h3>
+                <p class="text-accent opacity-70">Web Developer</p>
+              </div>
+            </div>
+            <img
+              class="absolute right-2 bottom-2 h-[5rem] w-[5rem]"
+              src="./images/quote.svg"
+              alt=""
+            />
           </div>
-        </section>
-      </div>
+        </div>
+        <div class="mt-12 flex items-center justify-center gap-x-4">
+          <span
+            class="inline-block h-[10px] w-[10px] rounded-full bg-secondary"
+          ></span>
+          <span
+            class="inline-block h-[10px] w-[10px] rounded-full bg-secondary opacity-20"
+          ></span>
+          <span
+            class="inline-block h-[10px] w-[10px] rounded-full bg-secondary opacity-20"
+          ></span>
+        </div>
+      </section>
+      <section class="isolate bg-primary px-4 py-14">
+        <h2 class="mb-4 text-center text-4xl font-bold text-white">
+          Appmax is available for all devices
+        </h2>
+        <p class="mb-7 text-center text-base text-white">
+          A Private Limited is the most . The limited liabilityis, in fact, the
+          only company allowed by Companies.
+        </p>
+        <div class="flex items-center justify-center gap-x-4">
+          <a class="" href=""><img src="./images/App Store.png" alt="" /></a>
+          <a href=""><img src="./images/Play Store.png" alt="" /></a>
+        </div>
+      </section>
+      <section class="bg-white px-4 py-14">
+        <img
+          class="pointer-events-none mb-7"
+          src="./images/Logo dark.svg"
+          alt="Company Logo"
+        />
+        <p class="mb-10 text-base text-accent opacity-70">
+          There are many variations of passages of Lorem the Ipsum available but
+          it is the majority of suffered that a alteration in that some dummy
+          text.
+        </p>
+        <div class="mb-12 flex items-center gap-x-4">
+          <a class="h-6 w-6" href=""
+            ><svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.28649 0.35229L5.60774 0.349609C3.72173 0.349609 2.5029 1.5939 2.5029 3.51977V4.98142H0.814993C0.669137 4.98142 0.551025 5.09908 0.551025 5.24422V7.36199C0.551025 7.50712 0.669272 7.62465 0.814993 7.62465H2.5029V12.9685C2.5029 13.1136 2.62101 13.2311 2.76687 13.2311H4.96911C5.11496 13.2311 5.23307 13.1135 5.23307 12.9685V7.62465H7.20663C7.35249 7.62465 7.4706 7.50712 7.4706 7.36199L7.4714 5.24422C7.4714 5.17453 7.44353 5.10779 7.3941 5.05848C7.34467 5.00916 7.27734 4.98142 7.2073 4.98142H5.23307V3.74236C5.23307 3.14682 5.3757 2.84449 6.15534 2.84449L7.28622 2.84409C7.43194 2.84409 7.55006 2.72642 7.55006 2.58142V0.614951C7.55006 0.470085 7.43208 0.352558 7.28649 0.35229Z"
+                fill="#000B33"
+              />
+            </svg>
+          </a>
+          <a class="h-6 w-6" href=""
+            ><svg
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 1.83826C13.4816 2.06455 12.9291 2.21455 12.3532 2.28738C12.9457 1.93536 13.3979 1.3822 13.6105 0.71546C13.0581 1.0432 12.4481 1.27469 11.7981 1.40388C11.2736 0.848115 10.526 0.503906 9.7104 0.503906C8.12805 0.503906 6.85416 1.7819 6.85416 3.34861C6.85416 3.57404 6.87333 3.7908 6.92038 3.99715C4.54424 3.88183 2.4417 2.74863 1.02926 1.02239C0.782675 1.4481 0.638033 1.93536 0.638033 2.45991C0.638033 3.44485 1.14777 4.31795 1.90757 4.82342C1.44838 4.81475 0.997896 4.6821 0.61625 4.47315C0.61625 4.48182 0.61625 4.49309 0.61625 4.50436C0.61625 5.88639 1.60696 7.03434 2.90613 7.29878C2.67348 7.36207 2.41992 7.39242 2.15677 7.39242C1.97379 7.39242 1.78907 7.38201 1.61567 7.34386C1.98599 8.47013 3.03683 9.29814 4.28632 9.32502C3.31391 10.0819 2.07923 10.538 0.742594 10.538C0.508204 10.538 0.283399 10.5276 0.0585938 10.499C1.32465 11.3114 2.82509 11.7752 4.44317 11.7752C9.70256 11.7752 12.578 7.4401 12.578 3.68242C12.578 3.5567 12.5736 3.43532 12.5675 3.3148C13.1348 2.91423 13.6114 2.41396 14 1.83826Z"
+                fill="#000B33"
+              />
+            </svg>
+          </a>
+          <a class="h-6 w-6" href=""
+            ><svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.3934 0.503906H3.81518C1.70844 0.503906 0 2.20389 0 4.3002V8.85576C0 10.9521 1.70844 12.6521 3.81518 12.6521H8.3934C10.5001 12.6521 12.2086 10.9521 12.2086 8.85576V4.3002C12.2086 2.20389 10.5001 0.503906 8.3934 0.503906ZM11.064 8.85576C11.064 10.3211 9.86606 11.5132 8.3934 11.5132H3.81518C2.34252 11.5132 1.14455 10.3211 1.14455 8.85576V4.3002C1.14455 2.83483 2.34252 1.6428 3.81518 1.6428H8.3934C9.86606 1.6428 11.064 2.83483 11.064 4.3002V8.85576Z"
+                fill="#000B33"
+              />
+              <path
+                d="M6.1105 3.54785C4.42495 3.54785 3.05835 4.90769 3.05835 6.58489C3.05835 8.26209 4.42495 9.62193 6.1105 9.62193C7.79604 9.62193 9.16264 8.26209 9.16264 6.58489C9.16264 4.90769 7.79604 3.54785 6.1105 3.54785ZM6.1105 8.48304C5.05903 8.48304 4.2029 7.63115 4.2029 6.58489C4.2029 5.53787 5.05903 4.68674 6.1105 4.68674C7.16196 4.68674 8.01809 5.53787 8.01809 6.58489C8.01809 7.63115 7.16196 8.48304 6.1105 8.48304Z"
+                fill="#000B33"
+              />
+              <path
+                d="M9.37697 3.72744C9.60216 3.72744 9.7847 3.5458 9.7847 3.32173C9.7847 3.09766 9.60216 2.91602 9.37697 2.91602C9.15179 2.91602 8.96924 3.09766 8.96924 3.32173C8.96924 3.5458 9.15179 3.72744 9.37697 3.72744Z"
+                fill="#000B33"
+              />
+            </svg>
+          </a>
+          <a class="h-6 w-6" href=""
+            ><img src="./images/Linkedin.svg" alt=""
+          /></a>
+        </div>
+        <div>
+          <p class="mb-5 font-semibold text-accent">Services</p>
+          <ul class="mb-12 space-y-4 font-normal text-accent opacity-70">
+            <li>Incident Responder</li>
+            <li>Secure Managed IT</li>
+            <li>Check website Url</li>
+            <li>Locker Security</li>
+          </ul>
+          <p class="mb-5 font-semibold text-accent">About Us</p>
+          <ul class="mb-12 space-y-4 font-normal text-accent opacity-70">
+            <li>Payment Plans</li>
+            <li>Make saving More</li>
+            <li>Tax Calculator</li>
+            <li>Talk To Us</li>
+          </ul>
+          <p class="mb-5 font-semibold text-accent">Contact</p>
+          <ul class="mb-12 space-y-4 font-normal text-accent opacity-70">
+            <li class="max-w-[13.9375rem]">
+              455 West Orchard Street Kings Mountain, NC 280867r
+            </li>
+            <li class="align-middle">
+              <span class="mr-2 inline-block align-middle">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.7161 10.5054C13.7365 10.5054 12.7747 10.3521 11.8633 10.0508C11.4166 9.89844 10.8676 10.0382 10.595 10.3183L8.79598 11.6768C6.70961 10.5627 5.42444 9.27758 4.32595 7.20624L5.64407 5.45354C5.98653 5.11143 6.10936 4.6117 5.96219 4.14281C5.65969 3.22628 5.50603 2.26461 5.50603 1.28431C5.50607 0.576134 4.93011 0 4.2222 0H1.28387C0.575957 0 0 0.576134 0 1.28427C0 9.40133 6.60157 16.0049 14.7161 16.0049C15.424 16.0049 16 15.4288 16 14.7206V11.7896C16 11.0815 15.424 10.5054 14.7161 10.5054Z"
+                    fill="#FD4C5C"
+                  />
+                </svg> </span
+              >+088 (246) 642-27-10
+            </li>
+            <li class="align-middle">
+              <span class="mr-2 inline-block align-middle">
+                <svg
+                  width="19"
+                  height="13"
+                  viewBox="0 0 19 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.392059 1.04278C2.96872 3.0346 7.48997 6.53881 8.81882 7.63143C8.99721 7.7789 9.18854 7.85387 9.38718 7.85387C9.5854 7.85387 9.77641 7.7796 9.95439 7.63283C11.2844 6.53914 15.8056 3.0346 18.3823 1.04278C18.5428 0.919011 18.5672 0.701458 18.4373 0.550141C18.1371 0.200483 17.6894 0 17.2097 0H1.56467C1.08494 0 0.637259 0.200484 0.337057 0.550175C0.207179 0.701458 0.231636 0.919011 0.392059 1.04278Z"
+                    fill="#FD4C5C"
+                  />
+                  <path
+                    d="M18.5472 2.1202C18.4085 2.06129 18.2454 2.08184 18.1301 2.17181C15.2726 4.38288 11.6257 7.21703 10.4783 8.16078C9.83427 8.6914 8.94048 8.6914 8.29498 8.16007C7.07195 7.15424 2.97657 3.97636 0.643965 2.17177C0.527837 2.08181 0.364371 2.06196 0.226865 2.12016C0.0886267 2.17877 0 2.30498 0 2.44408V11.4223C0 12.2099 0.701644 12.8504 1.56452 12.8504H17.2096C18.0724 12.8504 18.7741 12.2099 18.7741 11.4223V2.44408C18.7741 2.30498 18.6854 2.17844 18.5472 2.1202Z"
+                    fill="#FD4C5C"
+                  />
+                </svg>
+              </span>
+              example@gmail.com
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="/main.js"></script>

@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         'HK-Grotesk': ['HK Grotesk', 'sans-serif'],
       },
+      screens: {
+        xxl: '1440px',
+      },
     },
   },
   plugins: [],
