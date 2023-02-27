@@ -58,7 +58,7 @@
   font-style: normal;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px ) {
   .sponsor {
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,3 +72,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr))
   }
 }
+@media screen and (min-width: 1024px) {
+  .service-box {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+}
+
